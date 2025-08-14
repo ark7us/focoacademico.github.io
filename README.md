@@ -1,26 +1,3 @@
-import React, { useState, useEffect, useMemo, useCallback } from 'react';
-import { Clock, Book, Award, Plus, ChevronLeft, Calendar, Mic, FileText, Camera, Trash2, Play, Pause, RefreshCw, Pencil, ChevronRight } from 'lucide-react';
-
-// Constantes para as chaves do localStorage
-const LOCAL_STORAGE_KEYS = {
-    DISCIPLINAS: 'studyApp.disciplinas',
-    EVENTOS: 'studyApp.eventos',
-    TEMPO_ESTUDO: 'studyApp.tempoEstudoTotal'
-};
-
-// Configuração de Medalhas
-const MEDALHAS = [
-    { nome: "Iniciante", tempo: 15, icone: '🥉' },
-    { nome: "Focado", tempo: 60, icone: '🥈' },
-    { nome: "Persistente", tempo: 180, icone: '🥇' },
-    { nome: "Comprometido", tempo: 360, icone: '🎖️' },
-    { nome: "Mestre dos Estudos", tempo: 600, icone: '🏆' }
-];
-
-// --- COMPONENTES AUXILIARES ---
-
-const AnotacaoItem = ({ anotacao, onDelete }) => {
-    const getIcone = () => {
         switch (anotacao.tipo) {
             case 'texto': return <FileText className="w-5 h-5 text-blue-500" />;
             case 'foto': return <Camera className="w-5 h-5 text-purple-500" />;
