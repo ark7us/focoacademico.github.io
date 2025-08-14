@@ -1,0 +1,5 @@
+<iframe 
+  src="https://gemini.google.com/app/7b1466b808164dcf?canvas-id=c_7b1466b808164dcf_study-app-manager&full-screen=true&hl=pt-BR&pli=1" 
+  style="width: 100%; height: 812px; border: none; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"
+  title="Foco Acadêmico">
+</iframe>
